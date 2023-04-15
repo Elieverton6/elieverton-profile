@@ -26,7 +26,6 @@ export default function Home() {
         <>
         <Head>
             <title>Elieverton - Cartão de Visita</title>
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"></link>
         </Head>
         <GlobalStyle />
         <Container>
