@@ -9,6 +9,7 @@ export const Main = styled.div`
     padding: 1rem;
     margin: 0 auto;
     border-radius: 0.5rem;
+    width: 90%;
     max-width: 500px;
     background-color: rgba(0, 159, 0, 0.8);
 
@@ -30,13 +31,25 @@ export const NameAndJobWrapper = styled.div`
     margin: 0 0 0 1rem;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: white;
     }
 
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         color: rgba(47, 47, 47, 0.96);
+    }
+
+    @media (max-width: 500px) {
+        margin: 0;
+
+        h1 {
+            font-size: 1.25rem;
+        }
+
+        h2 {
+            font-size: 0.8rem;
+        }
     }
 `
 
@@ -44,7 +57,15 @@ export const ImageWrapper = styled.div`
     text-align: center;
 
     img {
+        margin: 0 0.3rem 0 0;
+        width: 120px;
         clip-path: circle(45% at 50% 50%);
+    }
+
+    @media (max-width: 500px) {
+        img {
+            clip-path: circle(40% at 50% 50%);
+        }
     }
 `
 export const MyDescriptionContainer = styled.div`
@@ -53,6 +74,13 @@ export const MyDescriptionContainer = styled.div`
         font-size: 1.5rem;
         text-align: center;
         color: white;
+    }
+    
+    @media (max-width: 500px) {
+
+        h1 {
+            font-size: 1.25rem;
+        }
     }
 `
 
@@ -69,6 +97,7 @@ export const MyDescriptionBox = styled.div`
     padding: 0.5rem;
 
     p {
+        font-size: 0.8rem;
         color: white;
     }
 `
@@ -78,6 +107,10 @@ export const HobbysContainer = styled.div`
         font-size: 1.5rem;
         text-align: center;
         color: white;
+    }
+
+    h1 {
+        font-size: 1.25rem;
     }
 `
 
@@ -97,11 +130,12 @@ export const HobbyBox = styled.div`
     background-color: rgba(255, 255, 255, 0.1);
 
     p {
+        font-size: 0.8rem;
         color: white;
     }
 
     div.icon {
-        clip-path: circle(13% at 50% 50%);
+        clip-path: circle(20% at 50% 50%);
         padding: 0.5rem;
         background-color: rgba(255, 255, 255, 0.3);
         margin: 0 0 1rem 0;
@@ -134,6 +168,10 @@ export const ContactContainer = styled.div`
         text-align: center;
         color: white;
     }
+
+    h1 {
+        font-size: 1.25rem;
+    }
 `
 
 export const ContactWrapper = styled.div`
@@ -155,6 +193,7 @@ export const ContactBox = styled.div`
         padding: 0.5rem;
 
         p {
+            font-size: 0.8rem;
             color: white;
         }
     }
