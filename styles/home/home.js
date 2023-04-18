@@ -160,6 +160,12 @@ export const HobbyBox = styled.div`
         border-bottom-right-radius: 1rem;
         border-left: 1px solid green;
     }
+
+    @media (max-width: 500px) {
+        div.icon {
+            clip-path: circle(17% at 50% 50%);
+        }
+    }
 `
 
 export const ContactContainer = styled.div`
