@@ -135,7 +135,7 @@ export const HobbyBox = styled.div`
     }
 
     div.icon {
-        clip-path: circle(20% at 50% 50%);
+        clip-path: circle(12% at 50% 50%);
         padding: 0.5rem;
         background-color: rgba(255, 255, 255, 0.3);
         margin: 0 0 1rem 0;
