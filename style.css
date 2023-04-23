@@ -1,0 +1,149 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100vh;
+    background: rgb(250,139,255);
+    background: -moz-linear-gradient(45deg, rgba(250,139,255,1) 0%, rgba(43,210,255,1) 35%, rgba(43,255,136,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(250,139,255,1) 0%, rgba(43,210,255,1) 35%, rgba(43,255,136,1) 100%);
+    background: linear-gradient(45deg, rgba(250,139,255,1) 0%, rgba(43,210,255,1) 35%, rgba(43,255,136,1) 100%);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.wrapper {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.image-wrapper img {
+    border: 2px solid white;
+    width: 130px;
+    border-radius: 100%;
+}
+
+.name-center h1 {
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.links-wrapper {
+    max-width: 500px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+}
+
+.links-box {
+    cursor: pointer;
+    border-radius: 5rem;
+    margin: 1rem 0;
+    align-items: center;
+    display: flex;
+    padding: 0.5rem;
+    border: 2px solid white;
+}
+
+.instagram-icon {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    clip-path: circle(50% at 50% 50%);
+    background-image: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);
+    background-color: white;
+}
+
+.whatsapp-icon {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    clip-path: circle(50% at 50% 50%);
+    background-color: green;
+}
+
+.discord-icon {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgb(43, 100, 255);
+}
+
+.links-box:hover {
+    transform: scale(1.020);
+}
+
+.links-box i {
+    font-size: 1.5rem;
+}
+
+.links-box h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin: 0 auto 0 auto;
+}
+
+/* MENSAGEM DE ALERTA (DISCORD) */
+
+.alert-wrapper {
+    display: none;
+    margin: 1rem 1rem 0 0;
+    border-radius: 0.2rem;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.message-text {
+    line-height: 3.1rem;
+    margin: 0 auto 0 auto;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.message-text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+.message-text i {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .alert-wrapper {
+        margin: 0;
+        width: 100%;
+        top: initial;
+        bottom: 0;
+        right: initial;
+    } 
+
+    .message-text p {
+        margin: 0 auto;
+        font-size: 0.8rem;
+    }
+
+    .message-text i {
+        font-size: 1rem;
+    }
+
+    .links-box h2 {
+        font-size: 1rem;
+    }
+}
